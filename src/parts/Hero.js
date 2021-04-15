@@ -10,9 +10,12 @@ import Button from 'elements/Button'
 
 export default function Hero(props) {
 
-    function showMostPicked() {
-        window.scrollTo()
-    }
+    // function showMostPicked() {
+    //     window.scrollTo({
+    //         top: props.refMostPicked.current.offsetTop - 30,
+    //         behavior: "smooth"
+    //     })
+    // }
 
   return (
     <section className="container pt-4">
@@ -29,6 +32,14 @@ export default function Hero(props) {
             Show Me
           </Button>   
         </div>
+      </div>
+      <div className="row mt-5">
+          <div className="col-auto">
+              <img src={IconTraveler} alt={`Travelers`}/>
+              <h6 className="mt-3">
+                  {/* {props.data.travelers} <span className="text-gray-500 font-wight-light">Travelers</span> */}
+              </h6>
+          </div>
       </div>
     </section>
   );
